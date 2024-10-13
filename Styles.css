@@ -43,6 +43,121 @@ main {
     background-color: rgb(255, 255, 255);
     
 }
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #ffcc00;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #ff6600;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff6600;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ff6600;
+    color: #fff;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: #ff6600;
+}
+
+/* Weekly Schedule Table */
+#schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#schedule th, #schedule td {
+    border: 1px solid #ffcc00;
+    padding: 10px;
+    text-align: center;
+}
+
+#schedule th {
+    background-color: #ffcc00;
+    color: #ff6600;
+}
+
+#schedule td {
+    background-color: #fff;
+}
+
+#schedule tr:hover td {
+    background-color: #ff6600;
+    color: #fff;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #ffcc00;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #schedule table {
+        font-size: 14px;
+    }
+}
 
 section {
     margin-bottom: 20px;
