@@ -140,7 +140,7 @@ footer {
     background-color: #ffcc00;
     text-align: center;
     padding: 10px;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
@@ -169,15 +169,7 @@ section h2 {
     color: #ff6600;
 }
 
-/* Footer Styling */
-footer {
-    background-color: #ffcc00;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+
 
 /* Responsive Design */
 @media (max-width: 600px) {
