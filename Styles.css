@@ -1,14 +1,92 @@
 /* Custom Styles for Sunshine Kindergarten */
 
-/* Header Styling */
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
     background-color: #ffcc00;
-    padding: 20px;
-    text-align: center;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
     color: #ff6600;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    background-color: #ff6600;
+    color: #fff;
+}
+
+/* Responsive Design for Header */
+@media (max-width: 600px) {
+    header {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+  
+}
+
+    @media (max-width: 768px) {
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            
+            
+        }
+        
+    
+    
+
+    header h1 {
+        margin-bottom: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
 }
 
 /* Navigation Styling */
@@ -40,64 +118,7 @@ nav ul li a:hover {
 /* Main Content Styling */
 main {
     padding: 20px;
-    background-color: rgb(255, 255, 255);
-    
-    
-}
-
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
-    color: #333;
-}
-
-/* Header Styling */
-header {
-    background-color: #ffcc00;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    color: #ff6600;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #ff6600;
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-nav ul li a:hover {
-    background-color: #ff6600;
-    color: #fff;
-}
-
-/* Main Content Styling */
-main {
-    padding: 20px;
+    background-color: #fff;
 }
 
 section {
@@ -161,22 +182,38 @@ footer {
     }
 }
 
-section {
+/* Photo Gallery Section */
+#gallery-section {
+    margin-top: 20px; /* Ensure it fits under the header */
+}
+
+#gallery-section h2 {
+    color: #ff6600;
     margin-bottom: 20px;
 }
 
-section h2 {
-    color: #ff6600;
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
+#gallery div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    nav ul li {
-        margin: 10px 0;
-    }
+#gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid #ffcc00;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+#gallery img:hover {
+    transform: scale(1.05);
+    border-color: #ff6600;
 }
