@@ -12,82 +12,56 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Header Styles */
+
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
     background-color: #ffcc00;
-    color: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header h1 {
-    font-size: 24px;
+    color: #1d3557;
+    display: inline;
+    margin-left: 10px;
 }
 
-header nav ul {
-    list-style-type: none;
-    padding: 0;
+nav ul {
     display: flex;
-    justify-content: center;
     gap: 15px;
 }
 
-header nav ul li {
+nav ul li {
     display: inline;
 }
 
-header nav ul li a {
-    text-decoration: none;
-    color: #ff6600;
+nav ul li a {
+    color: #1d3557;
     font-weight: bold;
-    padding: 10px;
-    border-radius: 5px;
+    text-decoration: none;
 }
 
-header nav ul li a:hover {
-    background-color: #ff6600;
-    color: #fff;
+nav ul li a:hover {
+    text-decoration: none;
+    color: #ffcc00;
 }
 
 /* Responsive Design for Header */
 @media (max-width: 600px) {
     header {
-        flex-direction: row;
-        align-items: flex-start;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        
+        
     }
   
 }
 
-    @media (max-width: 768px) {
-        header {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            
-            
-        }
-        
-    
-    
-
-    header h1 {
-        margin-bottom: 10px;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    header nav ul li {
-        margin: 10px 0;
-    }
-}
+   
 
 /* Navigation Styling */
 nav ul {
@@ -95,7 +69,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    
 }
 
 nav ul li {
@@ -169,7 +143,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 600px) {
     nav ul {
-        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -217,3 +191,4 @@ footer {
     transform: scale(1.05);
     border-color: #ff6600;
 }
+
